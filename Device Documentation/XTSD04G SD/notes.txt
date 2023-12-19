@@ -1,0 +1,18 @@
+XTSD04G : SD FLASH MEMORY
+
+    Product Description:
+        512MB Storage
+
+    Communication Protocol: SPI
+
+    Pin Connections:
+        VIN: 3.3v Assumed Voltage
+        3v3: 3.3v Out (Grab up to a high)
+        GND: GND
+        SCK: Pin 13
+        MISO: Pin 12
+        MOSI: Pin 11
+        CS: PIN 36 Control Select
+
+    Usage:
+        Uses the SD card library SD.h from arduino.

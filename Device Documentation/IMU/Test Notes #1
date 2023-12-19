@@ -1,0 +1,18 @@
+BNO055 Label With VIN On Left [Reference Frame]
+Linear Acceleration:
+    Positive Y Axis Oriented North of BN0555 Label
+    Positive X Axis Oriented East Of BN0555 Label
+    Positive Z Axis Oriented Above Face Of Chip
+Gyro (Angular Velocity Orientation):
+    # Relative to Axis in which rotated towards.
+
+    # For example applying torque which rotates around the Y-Axis does not 
+    # produce angular velocity in the Y vector.
+
+    # It produces angular velocity in the X axis.
+
+    Alternative Orientation Map:
+        X-Axis : Axis Oriented North of BN0555 Label (Rotating around)
+        Y-Axis : Axis Oriented East Of BN0555 Label (Rotating around)
+        Z-Axis : Axis Oriented Above Face Of Chip (Rotating around)
+

@@ -1,0 +1,53 @@
+Power needs:
+	PIN: V+ 3-18VDC
+Pin usage:
+
+	Uses analog input pin, connected to the out pin.
+
+	Output:
+		The out pin will then feed back the output voltage.
+
+	(Required Components):
+		[K Type Thermocouple Required]
+
+
+	Tempature:
+		Temperature = (Vout - 1.25) / 0.005 V
+
+	Temp - Range:
+		5V Power: -250c + 750c output (0 to 5VDC)
+		3.3V Power: -250c to 410c (0 to 3.3 VDC)
+
+
+	Usage Example.
+
+	const int analogInputPin = A0; // Analog input pin connected to the OUT pin of AD8495
+	float voltage, temperature;
+
+	void setup() {
+		Serial.begin(9600); // Initialize serial communication
+	}
+
+	void loop() {
+	// Read analog voltage from the thermocouple amplifier
+	int rawValue = analogRead(analogInputPin);
+	
+	// Convert the raw analog value to voltage (0 to 5V range)
+	voltage = rawValue * (5.0 / 1023.0);
+	
+	// Convert voltage to temperature using the provided equation
+	temperature = (voltage - 1.25) / 0.005;
+	
+	// Print the temperature value to the serial monitor
+	Serial.print("Voltage: ");
+	Serial.print(voltage);
+	Serial.print(" V, Temperature: ");
+	Serial.print(temperature);
+	Serial.println(" °C");
+	
+	delay(1000); // Wait for 1 second before reading again
+	}
+
+
+
+

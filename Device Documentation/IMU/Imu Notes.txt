@@ -1,0 +1,31 @@
+Library: https://github.com/adafruit/Adafruit_BNO055
+
+Voltage Supported:
+    3.3v - 5v
+
+RST:
+    Set pin low then high, to cause sensor rest.
+INT:
+    Generates signal when the device detects a specified movement or other effects.
+ADR:
+    Set high to change the default i2c address: default 0x28, otherwise 0x29
+PS0:
+    Protocol switch HID-i2c
+PS1:
+    Protocol switch UART
+
+
+The key raw data functions are:
+getVector (adafruit_vector_type_t vector_type)
+getQuat (void)
+getTemp (void)
+.getVector ( adafruit_vector_type_t vector_type )
+The .getVector function accepts a single parameter (vector_type), which indicates
+what type of 3-axis vector data to return.  
+The vector_type field can be one of the following values:
+VECTOR_MAGNETOMETER (values in uT, micro Teslas)
+VECTOR_GYROSCOPE (values in rps, radians per second)
+VECTOR_EULER (values in Euler angles or 'degrees', from 0..359)
+VECTOR_ACCELEROMETER (values in m/s^2)
+VECTOR_LINEARACCEL (values in m/s^2)
+VECTOR_GRAVITY (values in m/s^2)

@@ -1,0 +1,23 @@
+
+Mode One Idle [External Voltage]
+    Idle [Sensor Setup]
+    Telemetry [Set Up]
+    Test Telemetry [Ready Status]
+    Test Sensor    [Ready Status]
+
+Mode Two Valve Test [External Voltage]
+    Involves testing valves.
+    Limit switches are getting pressed.
+
+Mode Three Engine Ignition [External Voltage]
+    Valves, Thrust, And Standard Sensor
+    Standard Sensor Process.
+
+Mode Four Flight [Engine Ignition Finished]
+    GPS - OUT[Out No Calculation] Telemetry
+
+
+Mode Five Flight Recovery [Sensor Triggered]
+
+Mode Six Flight Landed [Vent Out]
+

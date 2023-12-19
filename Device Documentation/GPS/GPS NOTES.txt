@@ -1,0 +1,41 @@
+FGPMMOPA6B
+
+Libray: http://adafruit.github.io/Adafruit_GPS/html/index.html
+NMEA Sentence Conveter
+
+Operational Frequency L1 Frequency, and communicates with GPS satellites.
+	1575.42MHz
+Antenna 15mm x 15mm x 4mm
+Update frequency, 10Hz
+
+Complexities:
+	3D-FIX: Set if the gps has atleast three satellite gps connections
+	DPLUS and DOMIUS: ignore these they are only useful for USB connections
+	ENABLE: Acts as the control switch.
+Power Type:
+	3.3v
+
+Communication Standards:
+	The device is faulty if the parity bit is 1 and there are an even about of bits.
+	
+
+Usage:
+if (Serial.available() > 0) {
+    char receivedChar = Serial.read();
+    // Process the received character or data here
+}
+
+bool checkParity(char data) {
+  int numOnes = 0;
+
+  // Count the number of ones in the binary representation of the character
+  for (int i = 0; i < 8; ++i) {
+    if (data & (1 << i)) {
+      numOnes++;
+    }
+  }
+
+  // If the number of ones is even, return false (no error)
+  // If the number of ones is odd, return true (parity error)
+  return (numOnes % 2 != 0);
+}

@@ -1,0 +1,19 @@
+Device Datasheet:
+    https://cdn-shop.adafruit.com/datasheets/mcp23017.pdf
+Protocol:
+    I2c
+Pin Connections:
+    VSS: GND
+    VDD: 3.3v 
+    I2C: SCL-SDA
+    Reset Pin: 3.3v
+    3-Hardware Address: GND
+
+Software specificated pin selection.
+
+Library: Adafruit MCP23017 Arduino Library by Adafruit
+
+
+Pin Configurations:
+    INTA: Set high if input pin state has changed on the A 8 bit channel
+    INTA: Set high if input pin state has changed on the B 8 bit channel

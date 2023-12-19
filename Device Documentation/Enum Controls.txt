@@ -1,0 +1,12 @@
+enumCamel
+case SH2([^]+), case SH2$1\n\tSerial.print("$1");\n\tfile->WriteToFile("$1");
+
+case SH2([^]+), case SH2$1 \n\t edit$1
+
+Multi Steps
+edit_([^]+)_([A-z])([^]+) :, \L$1$2\L$3
+Serial.print\(sensorValue.un.([^)]+)\);,
+Serial.print(sensorValue.un.$1);\n\tfile->WriteToFile(sensorValue.un.$1);
+
+Single Steps
+edit_([^]+) :

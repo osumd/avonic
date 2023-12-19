@@ -1,0 +1,20 @@
+Component Name: ADXL375
+    Reading Limits:
+        G-FORCE: +-200g 3-Axis
+    Communication Protocols:
+        I2C or SPI
+Pins:
+    VIN: (3.3v - 5v) Input
+    3v0: 3.3V Output
+    GND: Ground
+    SCL: Clock
+    SDA: Serial Output / I2C Line
+    SDI: Serial In
+    CS:  Control Switch
+    INT/12 - These are the two interrupt pins. You can configure the interrupt to
+         trigger on multiple things such as threshold detection, shock detection and data
+         ready. You can map any of the interrupts independently to each pin.
+
+Example Code
+Open up File -> Examples -> Adafruit ADXL375 -> sensortest and upload to your
+Arduino wired to the sensor

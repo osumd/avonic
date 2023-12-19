@@ -1,0 +1,18 @@
+MS5607:
+    Default I2C Communication
+    Sensor Limits:
+        -40c + 85c, .01c Resolution
+        24-bit pressure and tempature values
+
+    Power Requirements:
+        3.3v to 6.5 VDC
+     Communication interface: 
+        I²C (up to 400 kHz) or 
+        SPI (20 MHz) 
+    Operating temperature: 
+        -40 to +185 °F (-40 to +85 °C) 
+    
+PS I Protocol select: 
+PS high (VDD) I2C;
+PS low (GND) SPI;
+ 

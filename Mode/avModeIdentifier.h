@@ -1,0 +1,14 @@
+#ifndef AVIONICS_MODE_IDENTIFIER
+#define AVIONICS_MODE_IDENTIFIER
+
+enum avModeIdentifier
+{
+    MODE_IDLE_LAUNCH_WAITING = 0,
+    MODE_VALVE_TESTING = 1,
+    MODE_IGNITION = 2,
+    MODE_FLIGHT = 3,
+    MODE_RECOVERY = 4,
+};
+
+
+#endif

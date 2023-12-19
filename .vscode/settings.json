@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "ms5607commands.h": "c",
+        "ms5607i2c.h": "c",
+        "deque": "c",
+        "string": "c",
+        "vector": "c",
+        "csvstring.h": "c",
+        "asvec.h": "c",
+        "bno0085notes": "cpp"
+    }
+}

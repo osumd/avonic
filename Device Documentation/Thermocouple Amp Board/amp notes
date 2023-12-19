@@ -1,0 +1,36 @@
+MAX 31856
+
+Thermocouple Amp Board:
+    Supports all thermocouple types.
+
+Communication Protocol:
+    4-wire SPI 
+
+Tempature Limits:
+    -210°C to +1800°C
+
+Power Supply:
+    3.3v to 5V
+
+Pins:
+    VIN: (3.3v - 5v) Input
+    3v0: 3.3V Output
+    GND: Ground
+    SCK: Clock
+    SDO: Serial Output
+    SDI: Serial In
+    CS:  Control Switch, Drop Low to start SPI transactions.
+    FLT: If you use the threshhold-notification capabilities of
+         the MAX31856 you can monitor this pin, when it goes low there's a fault!
+    DRDY: 
+         This pin is used for advanced uses where you tell the sensor to begin a
+        reading and then wait for this pin to go low. We don't use it in our library code
+        because we keep it simple with a delay/wait, but it is available in case you need
+        it
+
+Library:
+    Adafruit_MAX31856 Library
+    
+
+
+Usage:
